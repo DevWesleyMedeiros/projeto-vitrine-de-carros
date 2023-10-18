@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: large;
+    font-weight: normal;
+}
+:root{
+    --bordas: 2px solid black;
+    --cor_fundo1: red;
+    --cor_fundo2: blue;
+    --cor_fundo3: #a19c9c;
+    --font_personalizada:  font-family: 'Oswald', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+header{
+    max-width: 1500px;
+    height: 30vh;
+    width: 100%;
+    padding: 5px 0;
+}
+header .car_logo{
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin: 0.5rem 0 1.5rem 1.5rem;
+    background-image: url("../assets_arquivos/logo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+header nav{
+    max-width: 750px;
+    float: right;
+    width: 50%;
+}
+header nav ul{
+    display: inline-block;
+    width: 100%;
+    list-style-type: none;
+}
+header nav ul li{
+    float: left;
+    margin: 5rem 5%;
+    padding: 0 20px;
+    font-style: italic;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--font_personalizada);
+
+}
+header nav ul li a#first_link{
+    color: #EB2D2D;
+}
+.sessao1_banner{
+    max-width: 1500px;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets_arquivos/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.sessao1_banner .container_opcoes_empresa{
+    width: 30%;
+    height: 500px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sessao1_banner .container_opcoes_empresa .consultoria{
+    width: 314px;
+    height: 70px;
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    font-family: var(--font_personalizada);
+    font-weight: 700;
+    text-align: start;
+    background-image: url("../assets_arquivos/box-text.png");
+    margin-left: 60px;
+    margin-top: 30px;
+    line-height: 70px;
+    padding-left: 50px;
+    text-transform: uppercase;
+}
+.sessao1_banner .container_opcoes_empresa .compra{
+    width: 175px;
+    height: 70px;
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    font-family: var(--font_personalizada);
+    font-weight: 700;
+    text-align: start;
+    background-image: url("../assets_arquivos/box-text.png");
+    position: relative;
+    left: -55px;
+    margin-top: 30px;
+    line-height: 70px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+.sessao1_banner .container_opcoes_empresa .venda{
+    width: 175px;
+    height: 70px;
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    font-family: var(--font_personalizada);
+    font-weight: 700;
+    text-align: start;
+    background-image: url("../assets_arquivos/box-text.png");
+    position: relative;
+    left: -67px;
+    line-height: 70px;
+    margin-top: 30px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+.sessao1_banner .container_opcoes_empresa .email{
+    width: 350px;
+    height: 70px;
+    color: black;
+    font-style: italic;
+    font-size: 25px;
+    font-family: var(--font_personalizada);
+    font-weight: 700;
+    text-align: start;
+    background-image: url("../assets_arquivos/box-white-text.png");
+    position: relative;
+    left: 5px;
+    line-height: 70px;
+    margin-top: 30px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
