@@ -148,40 +148,110 @@ header nav ul li a#first_link{
 }
 .sessao2_veiculos_destaque{
     width: 100%;
-    background-color: var(--cor_fundo3);
 }
 .sessao2_veiculos_destaque .destaques{
     display: block;
-    margin: 5rem 3rem;
+    margin: 5rem auto 2rem auto;
 }
 .sessao2_veiculos_destaque .destaques h2{
     font-style: italic;
     text-align: center;
     font-size: 27px;
 }
-.galeria_carros{
-    background-color: aqua;
+.sessao2_veiculos_destaque .galeria_carros{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    padding: 2% 2%;
 }
-.galeria_carros .imagem_carro .foto_carro{
-    width: 60%;
-    height: auto;
-    border: var(--bordas);
+.sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro{
+    width: 100%;
+    height: 450px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+.sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro .informacoes_carro{
     width: 100%;
-    height: 200px;
+    padding-top: 5px;
+}
+.sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro .foto_carro{
+    width: 100%;
+    height: 100%;
     background-image: url("../assets_arquivos/carro1.jpg");
+    background-position: center top;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
 }
-.galeria_carros .imagem_carro .informacoes_carro{
+.sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro h2{
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+}
+.sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro p{
+    padding-top: 8px;
+    color: #353535;
+    font-size: 15px;
+    font-style: italic;
+}
+.sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro button{
+    width: 150px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    background-color: #EB2D2D;
+    text-decoration: none;
+    border-bottom: 5px solid #B21E1E;
+    color: white;
+    margin-top: 8px;
+    font-size: 16px;
+    font-style: italic;
+}
+.sessao3_depoimentos_servicos{
+    border: var(--bordas);
+    background-color: var(--cor_fundo3);
+    width: 100%;
+    height: auto;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos{
+    border: var(--bordas);
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos{
+    width: 100%;
+    height: 500px;
+    background-color: var(--cor_fundo1);
+    position: relative;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    left: 20%;
+    top: 35%;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos ul{
+    list-style-type: none;
+    font-family: var(--font_personalizada);
+    background-color: green;
+    position: absolute;
+    left: 20%;
+    bottom: 20%;
+    transform: translate(0%, -100%);
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos li{
+    color: white;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos{
+    width: 100%;
+    height: 500px;
+    background-color: var(--cor_fundo2);
 }
