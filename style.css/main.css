@@ -188,6 +188,7 @@ header nav ul li a#first_link{
     color: black;
     font-style: italic;
     font-size: 20px;
+    font-weight: bold;
 }
 .sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro p{
     padding-top: 8px;
@@ -210,9 +211,9 @@ header nav ul li a#first_link{
 }
 .sessao3_depoimentos_servicos{
     border: var(--bordas);
-    background-color: var(--cor_fundo3);
     width: 100%;
     height: auto;
+    margin-top: 5rem;
 }
 .sessao3_depoimentos_servicos .container_depoimentos_servicos{
     border: var(--bordas);
@@ -226,7 +227,7 @@ header nav ul li a#first_link{
 .sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos{
     width: 100%;
     height: 500px;
-    background-color: var(--cor_fundo1);
+    background-color: #242424;
     position: relative;
 }
 .sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos h2{
@@ -235,13 +236,12 @@ header nav ul li a#first_link{
     font-size: 32px;
     color: white;
     position: absolute;
-    left: 20%;
-    top: 35%;
+    left: 20.6%;
+    top: 32%;
 }
 .sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos ul{
     list-style-type: none;
     font-family: var(--font_personalizada);
-    background-color: green;
     position: absolute;
     left: 20%;
     bottom: 20%;
@@ -250,8 +250,63 @@ header nav ul li a#first_link{
 .sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos li{
     color: white;
 }
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos li::before{
+    content: "\26AA";
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos button{
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+    width: 150px;
+    height: 50px;
+    background-color: #EB2D2D;
+    text-decoration: none;
+    border-bottom: 5px solid #B21E1E;
+    position: absolute;
+    left: 63%;
+    bottom: 40%;
+    margin: 0 2%;
+}
 .sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
     height: 500px;
-    background-color: var(--cor_fundo2);
+    background-color: #EB2D2D;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos h2{
+    margin-left: 70px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+    text-align: start;
+    color: white;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .depoimento_cliente blockquote{
+    margin: 0 70px;
+    text-align: start;
+    font-size: 22px;
+    color: white;
+    font-family: var(--font_personalizada);
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .setas{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .setas .seta_esquerda, .seta_direita{
+    width: 25px;
+    height: 30px;
+    margin: 0 20px;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .setas .nome_pessoa_depoimento{
+    margin-right: 10%;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .setas .nome_pessoa_depoimento p{
+    color: #252525;
+    font-size: 25px;
 }
