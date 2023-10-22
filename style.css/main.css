@@ -33,9 +33,9 @@ header .car_logo{
     background-size: contain;
 }
 header nav{
-    max-width: 750px;
+    max-width: 500px;
+    width: 100%;
     float: right;
-    width: 50%;
 }
 header nav ul{
     display: inline-block;
@@ -43,8 +43,8 @@ header nav ul{
     list-style-type: none;
 }
 header nav ul li{
-    float: left;
-    margin: 5rem 5%;
+    float: right;
+    margin: 5rem 2%;
     padding: 0 20px;
     font-style: italic;
 }
@@ -357,7 +357,7 @@ header nav ul li a#first_link{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 2.5%;
+    gap: 1%;
     padding: 5rem 2%;
 }
 .sessao4_contato .container_contato .contato{
@@ -367,14 +367,14 @@ header nav ul li a#first_link{
 }
 .sessao4_contato .container_contato #contato_titulo{
     border: none;
-    width: 10%;
+    max-width: 200px;
+    width: 100%;
     height: 55px;
-    margin: 0 2%;
 }
 .sessao4_contato .container_contato .contato h2{
     text-align: center;
     font-size: 27px;
-    padding: 5% 0;
+    padding: 2% 0;
     font-style: italic;
     font-weight: bold;
 }
@@ -386,7 +386,8 @@ header nav ul li a#first_link{
     justify-content: center;
     align-items: center;
     gap: 10px;
-}.form form{
+}
+.form form{
     width: 50%;
 }
 .form form input[type=text]{
