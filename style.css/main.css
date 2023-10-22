@@ -77,17 +77,17 @@ header nav ul li a#first_link{
     background-position: right bottom;
     position: relative;
     background-color: #000;
-    border: var(--bordas);
 }
 .sessao1_banner .container_opcoes_empresa{
-    width: 30%;
+    max-width: 500px;
+    width: 100%;
     height: 500px;
     background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 1%;
     align-items: center;
+    padding-right: 5%;
 }
 .sessao1_banner .container_opcoes_empresa .consultoria{
     width: 314px;
@@ -157,6 +157,7 @@ header nav ul li a#first_link{
 }
 .sessao2_veiculos_destaque{
     width: 100%;
+    padding: 0 2%;
 }
 .sessao2_veiculos_destaque .destaques{
     display: block;
@@ -168,18 +169,18 @@ header nav ul li a#first_link{
     font-size: 27px;
 }
 .sessao2_veiculos_destaque .galeria_carros{
+    max-width: 1400px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    padding: 2% 2%;
+    grid-gap: 15px;
 }
 .sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro{
     width: 100%;
-    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro .informacoes_carro{
     width: 100%;
@@ -187,11 +188,12 @@ header nav ul li a#first_link{
 }
 .sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro .foto_carro{
     width: 100%;
+    min-height: 213px;
     height: 100%;
     background-image: url("../assets_arquivos/carro1.jpg");
-    background-position: center top;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     transition: 1s;
     transition: 0.8s;
     transition-delay: 0.5ms;
@@ -263,16 +265,18 @@ header nav ul li a#first_link{
     font-size: 32px;
     color: white;
     position: absolute;
-    left: 20.6%;
+    left: 10%;
     top: 32%;
+    /* border: 2px solid white; */
 }
 .sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos ul{
     list-style-type: none;
     font-family: var(--font_personalizada);
     position: absolute;
-    left: 20%;
+    left: 10%;
     bottom: 20%;
     transform: translate(0%, -100%);
+    /* border: 2px solid white; */
 }
 .sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos li{
     color: white;
@@ -280,23 +284,27 @@ header nav ul li a#first_link{
 .sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos li::before{
     content: "\26AA";
 }
-.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos button{
-    color: white;
-    font-size: 16px;
-    font-style: italic;
-    width: 150px;
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos .button_saiba_mais
+{
+    position: fixed;
+    width: 120px;
     height: 50px;
-    background-color: #EB2D2D;
-    text-decoration: none;
-    border-bottom: 5px solid #B21E1E;
-    cursor: pointer;
-    position: absolute;
-    left: 63%;
-    bottom: 40%;
-    margin: 0 2%;
     -webkit-box-shadow: -4px 3px 13px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -4px 3px 13px -6px rgba(0,0,0,0.75);
     box-shadow: -4px 3px 13px -6px rgba(0,0,0,0.75);
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos button{
+    width: 100%;
+    height: 100%;
+    background-color: #EB2D2D;
+    border-bottom: 5px solid #B21E1E;
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+    cursor: pointer;
     transition: 1s;
     transition-duration: 0.5s;
     transition-delay: 0.5ms;
