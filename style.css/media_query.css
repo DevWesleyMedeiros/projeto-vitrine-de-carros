@@ -4,7 +4,6 @@
         width: 100%;
     }
 }
-
 @media screen and (max-width: 923px){
     div.footer{
         display: block;
@@ -20,7 +19,6 @@
         text-align: center;
     }
 }
-
 @media screen and (max-width: 820px){
     .sessao2_veiculos_destaque .galeria_carros{
         display: grid;
@@ -37,7 +35,6 @@
         align-items: center;
     }
 }
-
 @media screen and (max-width: 758px){
     .sessao1_banner .container_opcoes_empresa{
         position: absolute;
@@ -45,6 +42,7 @@
     }
     .form form{
         width: 100%;
+        padding: 0 2%;
     }
     header{
         height: 400px;
@@ -76,7 +74,6 @@
         margin-left: 0;
     }
 }
-
 @media screen and (max-width: 485px){
     .sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro .foto_carro{
         background-size: contain;
@@ -85,23 +82,7 @@
         max-width: 500px;
     }
 }
-
-@media  screen and (max-width: 578px){
-    .sessao3_depoimentos_servicos .container_depoimentos_servicos{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .setas .seta_direita, .seta_esquerda {
-        display: none;
-    }
-    .sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .setas .nome_pessoa_depoimento{
-        display: block;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 368px){
+@media screen and (max-width: 450px){
     .sessao1_banner .container_opcoes_empresa{
         width: 100%;
         display: flex;
@@ -126,8 +107,34 @@
         padding: 3% 3%;
     }
     header nav ul{
+        width: 100%;
+        display: none;
+        flex-direction: column-reverse;
+        align-items: center;
+        background-color: #693838;
+    }
+    header nav ul li{
+        width: 100%;
+        border-bottom: 2px solid #605959;
+    }
+    header nav ul li a{
+        color: white;
+    }
+    header div.icone_menu_mobile{
+        display: inline-block;
+    }
+}
+@media  screen and (max-width: 578px){
+    .sessao3_depoimentos_servicos .container_depoimentos_servicos{
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
-    
+    .sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .setas .seta_direita, .seta_esquerda {
+        display: none;
+    }
+    .sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .setas .nome_pessoa_depoimento{
+        display: block;
+        margin: 0 auto;
+    }
 }
