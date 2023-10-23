@@ -1,10 +1,10 @@
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) and (orientation: landscape){
     .button_saiba_mais{
         display: block;
         width: 100%;
     }
 }
-@media screen and (max-width: 923px){
+@media screen and (max-width: 923px) and (orientation: landscape){
     div.footer{
         display: block;
         width: 100%;
@@ -19,7 +19,7 @@
         text-align: center;
     }
 }
-@media screen and (max-width: 820px){
+@media screen and (max-width: 820px) and (orientation: landscape){
     .sessao2_veiculos_destaque .galeria_carros{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -35,7 +35,7 @@
         align-items: center;
     }
 }
-@media screen and (max-width: 726px){
+@media screen and (max-width: 726px) and (orientation: landscape){
     .sessao1_banner .container_opcoes_empresa{
         position: absolute;
         top: 0;
@@ -43,9 +43,16 @@
     .form form{
         width: 100%;
     }
-
 }
-@media  screen and (max-width: 578px){
+@media screen and (max-width: 485px) and (orientation: landscape){
+    .sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro .foto_carro{
+        background-size: contain;
+        min-height: 250px;
+        height: 100%;
+        max-width: 500px;
+    }
+}
+@media  screen and (max-width: 578px) and (orientation: landscape){
     .sessao3_depoimentos_servicos .container_depoimentos_servicos{
         flex-direction: column;
         justify-content: center;
@@ -59,7 +66,7 @@
         margin: 0 auto;
     }
 }
-@media screen and (max-width: 368px){
+@media screen and (max-width: 368px) and (orientation: landscape){
     .sessao1_banner .container_opcoes_empresa{
         width: 100%;
         display: flex;
