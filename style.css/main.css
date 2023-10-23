@@ -21,6 +21,7 @@ header{
     height: 30vh;
     width: 100%;
     padding: 5px 0;
+    border: var(--bordas);
 }
 header .car_logo{
     width: 200px;
@@ -31,22 +32,26 @@ header .car_logo{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    border: var(--bordas);
 }
 header nav{
     max-width: 500px;
     width: 100%;
     float: right;
+    border: var(--bordas);
 }
 header nav ul{
     display: inline-block;
     width: 100%;
     list-style-type: none;
+    border: var(--bordas);
 }
 header nav ul li{
     float: right;
     margin: 5rem 2%;
     padding: 0 20px;
     font-style: italic;
+    border: var(--bordas);
 }
 header nav ul li a{
     text-decoration: none;
