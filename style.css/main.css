@@ -16,12 +16,12 @@
 html, body{
     height: 100%;
 }
+
 header{
     max-width: 1500px;
-    height: 30vh;
+    height: 26vh;
     width: 100%;
-    padding: 5px 0;
-    border: var(--bordas);
+    padding: 5px 2% 25px 2%;
 }
 header .car_logo{
     width: 200px;
@@ -32,26 +32,22 @@ header .car_logo{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    border: var(--bordas);
 }
 header nav{
     max-width: 500px;
     width: 100%;
     float: right;
-    border: var(--bordas);
 }
 header nav ul{
     display: inline-block;
     width: 100%;
     list-style-type: none;
-    border: var(--bordas);
 }
 header nav ul li{
     float: right;
     margin: 5rem 2%;
     padding: 0 20px;
     font-style: italic;
-    border: var(--bordas);
 }
 header nav ul li a{
     text-decoration: none;
@@ -93,6 +89,8 @@ header nav ul li a#first_link{
     justify-content: center;
     align-items: center;
     padding-right: 5%;
+    position: absolute;
+    left: 0;
 }
 .sessao1_banner .container_opcoes_empresa .consultoria{
     width: 314px;
@@ -348,6 +346,17 @@ header nav ul li a#first_link{
     display: flex;
     justify-content: space-between;
     margin-top: 1.5rem;
+}
+img.seta_esquerda, img.seta_direita{
+    transition: all 1s;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+}
+img.seta_esquerda:hover{
+    transform: scale(1.5) rotate(360deg);
+}
+img.seta_direita:hover{
+    transform: scale(1.5) rotate(360deg);
 }
 .sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .setas .seta_esquerda, .seta_direita{
     width: 25px;
