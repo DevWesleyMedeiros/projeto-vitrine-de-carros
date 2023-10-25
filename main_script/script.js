@@ -12,3 +12,4 @@ closeMenuMobile.addEventListener("click", (evt)=>{
     listaLinks.style.display = "none"
     closeMenuMobile.style.display = "none"
 })
+
