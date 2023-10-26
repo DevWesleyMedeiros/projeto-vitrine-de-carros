@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="../pagina_venda/style/vendas_style.css">
     <link rel="stylesheet" href="../pagina_venda/style/venda_media_query.css">
     <link rel="shortcut icon" href="../assets_arquivos/meu_favicon.ico" type="image/x-icon">
@@ -19,7 +20,13 @@
     <header>
         <div class="car_logo"></div>
         <nav>
-            <ul>
+            <div class="icone_menu" id="icone_menu">
+                <!--Imagem do icone menu aqui-->
+            </div>
+            <div class="icone_close">
+                <!--Imagem do icone menu fechar-->
+            </div>
+            <ul class="menu">
                 <li><a href="#">Contato</a></li>
                 <li><a href="../pagina_sobre/index.html" rel="next" target="_self">Sobre</a></li>
                 <li><a href="#" id="second_link">Venda</a></li>
@@ -175,5 +182,7 @@
             </div>
         </div>
     </footer>
+    <script src="pg_venda_script/pag_venda_script.js"></script>
+    
 </body>
 </html>
