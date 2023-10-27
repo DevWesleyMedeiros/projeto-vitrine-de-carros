@@ -15,11 +15,11 @@
         max-width: 100%;
         width: 100%;
         float: none;
-        margin: 3% 2% 3% 0.2%;
+        margin: 4% 2% 3% 0.2%;
     }
     header nav div.icone_menu{
         display: block;
-        margin: 0 auto 1rem auto;
+        margin: 1rem auto 1rem auto;
     }
     header nav div.icone_close{
         display: none;
@@ -28,16 +28,15 @@
     header nav ul{
         display: none;
         width: 100%;
-        border: 2px solid black;
         background-color: #693838;
     }
     header nav ul li{
         width: 100%;
         float: none;
-        margin: 0;
-        padding: 0 1rem;
+        margin: 2% 0;
+        padding: 2% 0;
         text-align: center;
-        border: 2px solid black;
+        border-bottom: 1px solid black;
     }
     header nav ul li a{
         font-size: 20px;
